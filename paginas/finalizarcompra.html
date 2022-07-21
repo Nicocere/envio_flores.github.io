@@ -1,0 +1,199 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <Title>Envio Flores, Finalizar Compra</Title>
+        <link rel="shortcut icon" href="../favicon (2).ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <meta name="description" content="envio de flores, latin flores, flores express, floreria en linea, enviar flores, argentina, flores buenos aires, flores capital federal" />
+        <meta name="author" content="Nicolas Cerecedo"/>
+        <meta name="keywords" content="envio de flores, latin flores, flores express, floreria en linea, enviar flores, argentina, Floreria capital federal, floreria buenos aires, enviar express, chocolates, peluches, osos, regalos flores, flores regalos, flores buenos aires, flores capital federal"/>
+        <meta charset="utf-8"/>
+
+        <link rel="stylesheet" href="../font.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+         <!-- ----- link de font asewome para menu responsive ------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../CSS/destino.css">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+      </style>
+
+
+
+    </head>
+
+
+
+    <!-- BODY  -->
+
+<body id="grid-area">
+
+
+    
+  <header class="header">
+    <nav class="secciondearriba">
+        <div class="imagen-principal">
+            <img src="../imagenes\EnvioFlores_2.png" class="imagen-logo" alt="Logo  principal Envio Flores">
+        </div>
+        
+        <div class="seccion"><li><a href="../index.html"> Inicio </a></li></div>
+    <!----------------- CATEGORIAS -------------------->
+        
+        <nav class="NavMenu">
+            <div id="Categoria" >Categorias
+                <img src="../imagenes\assets\arrow.svg" class="categoria_arrow" alt="svg flecha categoria">
+            </div>
+                <ul id="category_list">
+                    <li id="Todos" class="category_item ct_item-active" category="Todos" onclick="categoria(this.id)" >Todos los Productos</li>
+                    <li id="Rosas" class="category_item" categoria="Rosas" onclick="categoria(this.id)"> Rosas</li>
+                    <li id="Florero" class="category_item" categoria="Florero" onclick="categoria(this.id)"> Floreros</li>
+                    <li id="Canasta" class="category_item" categoria="Canasta" onclick="categoria(this.id)"> Canastas</li>
+                    <li id="Comestible" class="category_item" categoria="Comestible" onclick="categoria(this.id)"> Comestibles</li>
+                    <li id="Desayuno" class="category_item" categoria="Desayuno" onclick="categoria(this.id)"> Desayunos</li>
+                </ul>
+    
+        </nav>
+    <!----------------- fin categorias --------------------->
+        
+        <div class="seccion"><li><a href="../paginas/Pagina_header/fechas_especiales.html"> Fechas Especiales </a></li></div>
+        <div class="seccion"> <li><a href="../paginas/Pagina_header/Como_comprar.html">¿Como comprar?</a></li></div>
+        
+        
+            <input type="checkbox" id="abrirmenu">
+            <label for="abrirmenu" class="menubtn">
+            <i class="fa-solid fa-bars"></i>
+            </label>
+</nav>
+    
+    <!-- ICONOS DE FACEBOOK E INSTAGRAM Y LOGO ENVIO FLORES-->
+    
+    <div class="social-bar">
+        <a href="http://facebook.com/flores.aflorar" class="icon icon-facebook2" target="_blank"></a>
+        <a href="http://instagram.com/aflorar.arg" class="icon icon-instagram" target="_blank"></a>
+    </div>
+
+
+<!-------------------- CARRO DE COMPRAS-------------------------->
+            
+    <button id="boton-abrircarrito"><i class='fas fa-shopping-cart'></i> <span id="contadorCarrito">0</span> </button>
+
+
+</header>
+
+        <!-- finalizar compra -->
+        
+                    
+        
+        <main id="finalizar" >
+                            
+                <form class="formulario-envio">
+                <label for="nombreRecibe">First name:</label><br>
+                <input type="text" id="nombreRecibe" name="nRecibe" placeholder="Nombre de quien recibe"><br>
+
+                <label for="apellidoRecibe">Last name:</label><br>
+                <input type="text" id="apellidoRecibe" name="arecibe" placeholder="Apellido de quien recibe">
+                
+                <label for="calleRecibe">Direccion entrega: </label><br>
+                <input type="text" id="calleRecibe" name="crecibe" placeholder="Calle donde vive de quien recibe">
+
+                <label for="telefonoRecibe">Telefono de quien RECIBE </label><br>
+                <input type="text" id="telefonoRecibe" name="trecibe" placeholder="Telefono de quien recibe">
+                <br>
+
+                <button id="botonEnviarDatos" onclick="enviarDatos()"> Enviar Datos </button>
+                
+
+                <br>
+                
+                </form>
+            
+
+   
+        </main>
+
+
+        <div class="comprar">
+          <div class="carritodecompra">
+              <h4>Estos son los productos que Seleccionaste:</h4>
+              <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+              <div id="carrito-contenedor">
+                
+             
+
+              </div>
+
+              <p class="precioProducto">Precio total: $<span id="preciototal">0</span></p>
+              <div class="botones-carrito">
+                  <button id="vaciar-carrito" class="boton-vaciar">Vaciar carrito</button>
+                  <button id="finalizarcompra" class="button-finish">Finalizar Compra</button>
+              </div>
+          </div>
+      </div>
+        
+
+
+         <!--fin contenido principal-->
+
+    <!------------------------- FOOTER  ------------------------------>
+
+    <footer id="footer">
+    
+      <div class="link-fot">
+          <h2> Sitio Web Oficial</h2>
+      <a  class="webAflorar" href="http://aflorar.com.ar"> Visita nuestro WEB OFICIAL AFLORAR</a>
+      <p class="textoWebAflorar"> Floreria en linea, venta de flores en Ramos / Floreros / Desayunos y Meriendas /
+          Chocolates / Peluches / Vinos y más</p>
+      </div>
+  
+      <div class="col-footer"> 
+         <div class="mediosDePago"> 
+          <h2>Medios De Pago</h2>
+           <p> Todos los medios de pago. Paypal, Mercado Pago, Tarjeta de Credito,
+          Efectivo </p> <br>
+          <img src="../imagenes\footer\amex@2x.png" class="tarjeta-foot"  alt="">
+          <img src="../imagenes\footer\cabal@2x.png"  class="tarjeta-foot" alt="">
+          <img src="../imagenes\footer\mastercard@2x.png"  class="tarjeta-foot" alt="">
+          <img src="../imagenes\footer\mercadopago@2x.png"  class="tarjeta-foot" alt="">
+          <img src="../imagenes\footer\pagofacil@2x.png"  class="tarjeta-foot" alt="">
+          <img src="../imagenes\footer\paypal@2x.png"  class="tarjeta-foot" alt="">
+          <img src="../imagenes\footer\visa@2x.png"   class="tarjeta-foot"alt="">
+          <img src="../imagenes\footer\banelco@2x.png"   class="tarjeta-foot"alt="">
+      </div>
+      
+      </div>
+      <div class="contacto">
+          <h1>Contactanos</h1>
+          <a href="tel:+54 9 11 4788 9185" class="contacto-tel"><i class="fa-solid fa-phone"></i> +54 9 11 4788 9185</a>
+          
+          <a href="mailto:regalosflores25@gmail.com" class="contacto-mail"><i class="fa-solid fa-envelope"></i>Regalosflores25@gmail.com </a>
+  
+      </div>
+      
+      <div class="social-bar-footer"> 
+          <h2> Redes Sociales</h2>
+          <a href="http://facebook.com/flores.aflorar" class="fb-foot"><i class="fa-brands fa-facebook-square"></i>  Facebook</a>
+          <a href="http://instagram.com/aflorar.arg" class="inst-foot"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      </div>
+  
+      </footer>
+
+
+
+    </body>
+
+
+
+      <script src="../script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/dist/sweetalert2.all.min.js" integrity="sha256-6DBhCk8kLxWN6B/oKVfvB0ieNTCY2r0rlFlkAjLmrsM=" crossorigin="anonymous"></script>
+
+
+</html>
