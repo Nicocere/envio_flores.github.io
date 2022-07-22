@@ -969,6 +969,14 @@ header {
     margin-bottom: 1%;
     grid-column-gap: 3%;
   }
+
+  #footer {
+    grid-area: pie;
+    background-color: rgba(255, 255, 255, 0.705);
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-column-gap: 2%;
+  }
 }
 @media screen and (max-width: 1024px) {
   #grid-area {
@@ -1203,6 +1211,14 @@ header {
   .category_list .ct_item-active {
     background-color: rgba(133, 17, 75, 0.829);
   }
+
+  #footer {
+    grid-area: pie;
+    background-color: rgba(255, 255, 255, 0.705);
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-column-gap: 2%;
+  }
 }
 @media screen and (max-width: 700px) {
   #productos {
@@ -1295,6 +1311,13 @@ header {
 
   #boton-abrircarrito {
     width: 10%;
+  }
+
+  #footer {
+    grid-area: pie;
+    background-color: rgba(255, 255, 255, 0.705);
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1574,10 +1597,6 @@ header {
     font-family: "Courgette";
   }
 
-  footer {
-    display: flex;
-  }
-
   .icon-facebook {
     background: #2c0394;
     color: white;
@@ -1596,14 +1615,14 @@ header {
     margin: 0%;
     padding: 0%;
   }
-}
-#footer {
-  grid-area: pie;
-  background-color: rgba(255, 255, 255, 0.705);
-  display: flex;
-  flex-direction: column;
-}
 
+  #footer {
+    grid-area: pie;
+    background-color: rgba(255, 255, 255, 0.705);
+    display: flex;
+    flex-direction: column;
+  }
+}
 #buscarProducto {
   margin-right: 2%;
 }
