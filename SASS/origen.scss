@@ -36,18 +36,17 @@ body {
 	"productos productos"
 	"entrega entrega"
 	"pie pie";
-		grid-column-gap: 1%;
-		grid-row-gap: 2.5%;
 
 		margin: 1%;
-		margin-top: 0%;
+		margin-top: .5%;
 		background-image: url(../imagenes/fondo_pagina.jpg);
 		background-size: cover;
 }
 
 #buscadores {
 	grid-area: buscador;
-	justify-items: stretch;
+    justify-items: stretch;
+    margin-bottom: 1%;
 }
 
 .form {
@@ -120,17 +119,17 @@ header {
 .social-bar {
 	display: flex;
 	flex-direction: column;
-	left: -8px;
-	align-items: flex-start;
+	right: -8px;
+	align-items: flex-end;
 	z-index: 100;
 	top: 140px;
 	height: fit-content;
 	position: absolute;
-	float: left;
+	float: right;
 	transition: all .5s;
 		
     &:hover {
-		left: -3px;
+		right: -3px;
 		transition: all .8s;
 	}
 }
@@ -141,11 +140,13 @@ header {
 	height: fit-content;
 	transition: all .3s;
 	display: block;
+	text-align: left;
 	
     &:hover {
 		width: 75px;
-		transition: all .6s;
+		transition: all 0.6s;
 		color: white;
+		text-align: left;
 	}
 }
 .icon-facebook2 {
@@ -176,7 +177,7 @@ header {
     font-family: 'Lato', sans-serif;
     font-size: 130%;
     overflow: hidden;
-	width: 17%;
+	
 }
 
 .elegircategoria {
@@ -431,19 +432,30 @@ $background-color_2: white;
 
 
 #boton-abrircarrito{
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    background: rgba(246, 185, 204, 0.4705882353);
+    padding: 0%;
+    position: relative;
+    left: 70%;
+    display: flex;
+    border: groove;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0%;
+    width: 25%;
+    align-items: center;
+    border-radius: 10px;
+}
 
-	border: none;
-    color: rgb(163, 12, 105);
-    font-size: 200%;
-    background-color: #ffffff00;
-    border-radius: 50%;
-    padding: 10px 20px;
-    transition: all 0.3s;
+.fa-shopping-cart{
+	font-size: 120%;
+	transition: font-size 0.3s;
 
 	&:hover {
 		cursor: pointer;
 		color: rgb(0, 0, 0);
-		font-size: 50px;
+		font-size: 150%;
 		padding: 3px 20px;
 	}
 
@@ -454,6 +466,17 @@ $background-color_2: white;
 
 }
 
+#contadorCarrito{
+	margin-right: 5%;
+}
+
+.shop-cart{
+	color: black;
+	margin: 0%;
+	background: rgba(255, 255, 255, 0.527);
+	padding: 9.5px  18.5px;
+	font-family: "Quintessential";
+}
 
 .productoEnCarrito {
     border-left: 7px solid rgb(203, 19, 148);
@@ -550,7 +573,7 @@ $background-color_2: white;
 	}
 }
 
-#botones-producto{
+#btn-prod{
 	display: flex;
 	align-self: center;
 	

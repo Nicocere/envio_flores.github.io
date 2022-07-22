@@ -555,7 +555,7 @@ let loadProducts = (arrayData) => {
 
 <button id="agregar${producto.id}" class="button-add" onclick="agregar()" >Agregar producto <i class='fas fa-shopping-cart'></i></button>
         
-<div id="botones-producto">    
+<div id="btn-prod">    
         
 </div>
 
@@ -614,7 +614,7 @@ buscador = document.getElementById('buscarProducto')
 
 
         //BOTONES ACCIONES
-        const botonesProducto = document.getElementById ('botones-producto')
+        const botonesProducto = document.getElementById ('btn-prod')
         let agregar = document.getElementById(`agregar${producto.id}`)
         
         
@@ -773,6 +773,7 @@ finalizarCompra.addEventListener('click',(event) =>{
         <img src=${prod.img} alt="">
         <h5 class="tituloProducto"> ${prod.nombre} </h5>
         <p class="descripcion">${prod.descr}</p>
+        <p class="descripcion">Veces que lo pidió: ${prod.stock}</p>
         <p class="precioProducto">Precio: $${prod.sumaPrecioProductos}</p>
 
      `
@@ -860,11 +861,14 @@ function validarFormulario(e){
     let warning = ""
     let advertencia = true
     let datosValidos = true
+    
 
     if(nombreRecibe.length <2){
         warning += `El nombre no es valido <br>`
         advertencia = true
         datosValidos = false
+        nombreRecibe.style.background = "red"
+        
     }
     if(apellidoRecibe.length <2){
         warning += `El apellido no es valido <br>`
