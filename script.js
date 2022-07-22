@@ -867,7 +867,6 @@ function validarFormulario(e){
         warning += `El nombre no es valido <br>`
         advertencia = true
         datosValidos = false
-        nombreRecibe.style.background = "red"
         
     }
     if(apellidoRecibe.length <2){
