@@ -1,7 +1,7 @@
 export{stockProductos};
 
 
- const stockProductos = [
+ let stockProductos = [
     {id: 1, producto: true, nombre: "Caja Rosas Diamante & Ferrero Rocher", categoria: ["Rosas", "Todos"] , opciones:[
             { tamaño: 12,
              color: ["rosas","rojas","amarillas","blancas"],
