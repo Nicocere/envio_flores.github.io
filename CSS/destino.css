@@ -217,6 +217,20 @@ header {
   visibility: hidden;
 }
 
+.botonEnviarDatos {
+      padding: .5% 2.5%;
+    background: radial-gradient(transparent, #ff0047);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lato';
+    font-size: larger;
+    transition: background 1.5s
+}
+
+.botonEnviarDatos:hover {
+   background: radial-gradient(#00ffffbd, #2700ff)
+}
+
 .comprar-active {
   opacity: 1;
   visibility: visible;
